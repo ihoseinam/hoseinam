@@ -1,30 +1,45 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-  
-   
-    <title>hosein site</title>
-
+    <title>عنوان سایت</title>
     <style>
-      body {
-        background-color: rgb(255, 255, 255);
-        font-size: 15px;
-        direction: rtl;
-      
+        body {
+            background-color: #ffecd9;
+            direction: rtl;
+        }
+
+        @keyframes moving-text {
+            0% { transform: translateX(-50%); opacity: 0; }
+            50% { transform: translateX(0); opacity: 1; }
+            100% { transform: translateX(50%); opacity: 0; }
+        }
+        
+        .animated-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: moving-text 3s infinite;
+            font-weight: bold;
+            font-size: 24px;
+            text-align: center;
+        }
     </style>
-
-
 </head>
-
 <body>
+    <header>
+        <h1 class="animated-text">به سایت خوش آمدید.   عمو حسین در خدمت شماست </h1>
+    </header>
+    
+    
+    
     <section>
-        <<h2> به وب سایت hosein خوش آمدید</h2>
+        <h2>خوش آمدید به وب سایت HOSEIN</h2>
+       <P>  جهت طراحی سایت تلگرام پیام دهید </P>
+       <p> i_hoseinam@  </p>
+
     </section>
-      
-   
-    <marquee  behavior="scroll"  dir="ltr" direction="rtl" height="25" width="800"  loop="-1" scrollamount="7">
-  @i_hoseinam جهت ارتباط با مدیریت سایت تلگرام پیام دهید 
-    </marquee>
-  
+    
+    
 </body>
 </html>
