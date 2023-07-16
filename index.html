@@ -1,45 +1,68 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-<title> hosein website</title>
+  <head>
+    
+    <meta charset="UTF-8">
+    <title>hosein Website</title>
     <style>
-        body {
-            background-color: #ffecd9;
-            direction: rtl;
+         @keyframes movingText {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(200px);
+            }
+            100% {
+                transform: translateX(0);
+            }
         }
 
-        @keyframes moving-text {
-            0% { transform: translateX(-50%); opacity: 0; }
-            50% { transform: translateX(0); opacity: 1; }
-            100% { transform: translateX(50%); opacity: 0; }
+        .animatedText {
+            animation: movingText 3s infinite;
         }
-        
-        .animated-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: moving-text 3s infinite;
-            font-weight: bold;
-            font-size: 24px;
-            text-align: center;
-        }
+      body {
+        font-family: Arial, sans-serif;
+      }
+      header {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      h1 {
+        font-size: 24px;
+        margin: 0;
+      }
+      main {
+        padding: 20px;
+        text-align: center;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    
     <header>
-        <h1 class="animated-text">به سایت خوش آمدید.   دایی حسین در خدمت شماست </h1>
+      <h1>hosein Website</h1>
     </header>
-    
-    
-    
-    <section>
-        <h2>خوش آمدید به وب سایت HOSEIN</h2>
-       <P>  جهت طراحی سایت تلگرام پیام دهید </P>
-       <p> i_hoseinam@  </p>
+    <main>
+      <h2>خوش آمدید به وب سایت من</h2>
 
-    </section>
     
-    
-</body>
+      
+      <h1 class="animatedText"> جهت ارتباط با پشتیبانی سایت پیام دهید </h1>
+      <h2 >  </h2>
+      <h3> </h3>
+      <button onclick="alert('@i_hoseinam تلگرام پیام دهید')">پشتیبانی  </button>
+    </main>
+   
+  </body>
+ 
 </html>
